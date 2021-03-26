@@ -7,9 +7,9 @@ RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
 RUN cd / && \
-    git clone https://github.com/suprojects/CallsMusic smp && \
-    cd smp/ && \
+    git clone https://github.com/ImJanindu/calls-music && \
+    cd calls-music/ && \
     rm -r .git && \
     pip3 install -r requirements.txt
-WORKDIR /smp
+WORKDIR /calls-music
 CMD python3 main.py
