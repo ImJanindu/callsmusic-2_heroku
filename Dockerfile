@@ -7,9 +7,9 @@ RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
 RUN cd / && \
-    git clone https://github.com/ImJanindu/calls-music && \
-    cd calls-music/ && \
+    git clone https://github.com/ImJanindu/Mizuki-Music-Bot && \
+    cd Mizuki-Music-Bot/ && \
     rm -r .git && \
     pip3 install -r requirements.txt
-WORKDIR /calls-music
+WORKDIR /Mizuki-Music-Bot
 CMD python3 main.py
